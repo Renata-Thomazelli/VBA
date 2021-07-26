@@ -1,0 +1,15 @@
+Sub InsereEmBranco()
+
+Dim x As Long
+x = 2
+Do While Cells(x, 1) <> “”
+
+If Cells(x - 1, 1) <> “” Then
+    Cells(x, 1).EntireRow.Insert
+    Cells(x, 1).EntireRow.Insert
+    End If
+
+    x = x + 3
+    Loop
+
+End Sub
